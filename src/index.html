@@ -1,19 +1,15 @@
-<!doctype html>
-<html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Althea and James</title>
-
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css"> <!-- Add this line -->
 </head>
 
 <body>
 
   <h1>Althea and James</h1>
-
   <h3>BSIT-2C</h3>
 
   <p>
@@ -23,7 +19,25 @@
     Web development is important because it helps businesses and individuals share information online.
   </p>
 
+  <!-- Sample Image -->
+  <img class="sample-image" src="wel.jpg " alt="Sample Web App Image">
+
+  <!-- Interactive Buttons -->
+  <div>
+    <button class="btn">Click Me!</button>
+    <button class="btn">Learn More</button>
+  </div>
+
   <app-root></app-root>
 
+  <script>
+    // Make buttons interactive
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        alert('You are interacting with the web app!');
+      });
+    });
+  </script>
+
 </body>
-</html>
